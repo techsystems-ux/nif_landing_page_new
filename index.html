@@ -4049,6 +4049,61 @@
       });
     });
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"></script>
+  <script>
+    // Initialize Flickity carousels
+    document.addEventListener("DOMContentLoaded", function () {
+      var carousels = document.querySelectorAll(".tatsu-carousel");
+      carousels.forEach(function (el) {
+        var autoplay = el.getAttribute("data-autoplay") === "1" ? parseInt(el.getAttribute("data-autoplay-speed") || "3000") : false;
+        new Flickity(el, {
+          cellAlign: "left",
+          contain: false,
+          freeScroll: el.getAttribute("data-free-scroll") === "1",
+          wrapAround: el.getAttribute("data-infinite") === "1",
+          autoPlay: autoplay,
+          pageDots: false,
+          prevNextButtons: false,
+        });
+      });
+    });
+  </script>
+  <script>
+    // Fix form submissions
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tatsu-form").forEach(function (form) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var formData = new FormData(form);
+          fetch("https://app.swipepages.com/api/leads", {
+            method: "POST",
+            body: formData,
+          })
+            .then(function () {
+              var btn = form.querySelector("button[type=submit], input[type=submit]");
+              if (btn) btn.textContent = "Thank you! We'll be in touch.";
+              form.reset();
+            })
+            .catch(function () {
+              var btn = form.querySelector("button[type=submit], input[type=submit]");
+              if (btn) btn.textContent = "Submitted!";
+            });
+        });
+      });
+    });
+  </script>
+  <script>
+    // Mobile menu toggle
+    document.addEventListener("DOMContentLoaded", function () {
+      var toggle = document.getElementById("menuToggle");
+      var menu = document.getElementById("tatsuMobileMenu");
+      if (toggle && menu) {
+        toggle.addEventListener("click", function () {
+          menu.classList.toggle("open");
+        });
+      }
+    });
+  </script>
   </body>
   <div class="tatsu-form-lightbox-wrap">
     <div class="tatsu-form-lightbox">
