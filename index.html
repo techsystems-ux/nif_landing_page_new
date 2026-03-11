@@ -4045,6 +4045,18 @@
       <div class="lE"><div class="kE"></div></div>
       <div class="pE tatsu-section-overlay BC"></div>
     </div>
+  <script>
+    // Fix lazy-loaded images for local preview
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("img[data-src]").forEach(function (img) {
+        if (img.getAttribute("data-srcset")) {
+          img.srcset = img.getAttribute("data-srcset");
+        }
+        img.src = img.getAttribute("data-src");
+        img.style.opacity = "1";
+      });
+    });
+  </script>
   </body>
   <div class="tatsu-form-lightbox-wrap">
     <div class="tatsu-form-lightbox">
