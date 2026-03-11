@@ -1884,7 +1884,7 @@ div.line-wrapper span {
   z-index: 99;
 }
 .A {
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .B {
   font-weight: 700;
@@ -2027,9 +2027,7 @@ div.line-wrapper span {
   padding-bottom: 82.75862068965519%;
 }
 .i {
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
-    Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   letter-spacing: 0;
   line-height: 1.3em;
@@ -2093,7 +2091,7 @@ div.line-wrapper span {
   background-image: url(https://nifdeccanpunecom.swipepages.media/2025/3/67d7d0dc1123d700115e095d/frame-44--2-.png);
 }
 .m {
-  font-family: "Poppins";
+  font-family: "Montserrat";
 }
 .uB {
   margin: 0px 0px 20px 0px;
@@ -2108,7 +2106,7 @@ div.line-wrapper span {
   background-image: url(https://nifdeccanpunecom.swipepages.media/2025/3/67d7d0dc1123d700115e095d/frame-44--1-.png);
 }
 .n {
-  font-family: "Jim Nightshade";
+  font-family: "Montserrat";
 }
 .tB {
   margin: 0px 0px 30px 0px;
@@ -2124,7 +2122,7 @@ div.line-wrapper span {
 }
 .o {
   font-size: 56px;
-  font-family: "Contrail One";
+  font-family: "Montserrat";
 }
 .sB {
   margin: 0px 0px 40px 0px;
@@ -2597,7 +2595,7 @@ div.line-wrapper span {
     font-size: 14px;
   }
   .nD {
-    font-family: "Poppins";
+    font-family: "Montserrat";
   }
   .OE {
     font-size: 18px;
@@ -2648,74 +2646,6 @@ div.line-wrapper span {
     padding: 20px 0px 0px 0px;
   }
 }
-@font-face {
-  font-family: "Inter";
-  src:
-    url("https://assets.swipepages.com/fonts/inter/regular/Inter-Regular.woff")
-      format("woff"),
-    url("https://assets.swipepages.com/fonts/inter/regular/Inter-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://assets.swipepages.com/fonts/inter/regular/Inter-Regular.otf")
-      format("opentype"),
-    url("https://assets.swipepages.com/fonts/inter/regular/Inter-Regular.ttf")
-      format("truetype"),
-    url("https://assets.swipepages.com/fonts/inter/regular/Inter-Regular.svg#Inter-Regular")
-      format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  src:
-    url("https://assets.swipepages.com/fonts/inter/semibold/Inter-SemiBold.woff")
-      format("woff"),
-    url("https://assets.swipepages.com/fonts/inter/semibold/Inter-SemiBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://assets.swipepages.com/fonts/inter/semibold/Inter-SemiBold.otf")
-      format("opentype"),
-    url("https://assets.swipepages.com/fonts/inter/semibold/Inter-SemiBold.ttf")
-      format("truetype"),
-    url("https://assets.swipepages.com/fonts/inter/semibold/Inter-SemiBold.svg#Inter-SemiBold")
-      format("svg");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  src:
-    url("https://assets.swipepages.com/fonts/inter/bold/Inter-Bold.woff")
-      format("woff"),
-    url("https://assets.swipepages.com/fonts/inter/bold/Inter-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://assets.swipepages.com/fonts/inter/bold/Inter-Bold.otf")
-      format("opentype"),
-    url("https://assets.swipepages.com/fonts/inter/bold/Inter-Bold.ttf")
-      format("truetype"),
-    url("https://assets.swipepages.com/fonts/inter/bold/Inter-Bold.svg#Inter-Blod")
-      format("svg");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  src:
-    url("https://assets.swipepages.com/fonts/inter/medium/Inter-Medium.woff")
-      format("woff"),
-    url("https://assets.swipepages.com/fonts/inter/medium/Inter-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://assets.swipepages.com/fonts/inter/medium/Inter-Medium.otf")
-      format("opentype"),
-    url("https://assets.swipepages.com/fonts/inter/medium/Inter-Medium.ttf")
-      format("truetype"),
-    url("https://assets.swipepages.com/fonts/inter/medium/Inter-Medium.svg#Inter-Medium")
-      format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
 :root {
   --primary: #353535;
 
@@ -2737,7 +2667,7 @@ div.line-wrapper span {
 
   padding: 0;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -2934,7 +2864,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .notification {
@@ -3030,4 +2960,30 @@ body {
   color: white;
   font-size: 11px;
   font-weight: bold;
+}
+
+/* Mobile menu toggle button */
+.menu-toggle-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+.menu-toggle-btn span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 3px;
+}
+@media (max-width: 1024px) {
+  .menu-toggle-btn {
+    display: flex;
+  }
 }

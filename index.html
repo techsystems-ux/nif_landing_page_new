@@ -15,11 +15,9 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Contrail One:400|Poppins:600,200,500,700,400|Jim Nightshade:400&display=swap"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" />
     <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" />
   </head>
   <body class="A F G J R">
     <div class="tatsu-header TG">
@@ -32,12 +30,12 @@
             />
           </div>
           <div class="tatsu-header-menu"></div>
+          <button id="menuToggle" class="menu-toggle-btn" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
-      <div
-        class="tatsu-mobile-menu"
-        [class]="isOpen ? 'tatsu-mobile-menu open' : 'tatsu-mobile-menu'"
-      ></div>
+      <div class="tatsu-mobile-menu" id="tatsuMobileMenu"></div>
     </div>
     <div
       class="tatsu-DSjTwAUM8B jE SF RF tatsu-section-offset RF"
@@ -94,7 +92,7 @@
                               style="
                                 color: #e5ad1c;
                                 font-weight: 700;
-                                font-family: &quot;Inter&quot;, sans-serif;
+                                font-family: &quot;Montserrat&quot;, sans-serif;
                                 font-size: 15px;
                               "
                             >
@@ -148,13 +146,12 @@
                             <form
                               method="POST"
                               id="sp-form-z8CpaSt81g"
-                              action-xhr="https://app.swipepages.com/api/leads"
+                              action="https://app.swipepages.com/api/leads"
                               data-thankyou-msg="&lt;p&gt;Please wait...&lt;/p&gt;"
                               data-redirect-url
                               data-terms-req="0"
                               class="tatsu-form BB"
                               target="_top"
-                              on="submit-success: AMP.setState({currentPopup:null,formLightboxShowzCpaStg: true});submit-error: AMP.setState({formLightboxShowzCpaStg: true})"
                             >
                               <div class="tatsu-form-step">
                                 <div
@@ -420,7 +417,7 @@
                               style="
                                 color: #e5ad1c;
                                 font-weight: 700;
-                                font-family: &quot;Inter&quot;, sans-serif;
+                                font-family: &quot;Montserrat&quot;, sans-serif;
                                 font-size: 15px;
                               "
                             >
@@ -476,13 +473,12 @@
                             <form
                               method="POST"
                               id="sp-form-8UT-A5DzaK"
-                              action-xhr="https://app.swipepages.com/api/leads"
+                              action="https://app.swipepages.com/api/leads"
                               data-thankyou-msg="&lt;p&gt;Please wait...&lt;/p&gt;"
                               data-redirect-url
                               data-terms-req="0"
                               class="tatsu-form BB"
                               target="_top"
-                              on="submit-success: AMP.setState({currentPopup:null,formLightboxShowUTADzaK: true});submit-error: AMP.setState({formLightboxShowUTADzaK: true})"
                             >
                               <div class="tatsu-form-step">
                                 <div
@@ -1907,10 +1903,6 @@
                                   content="width=device-width,initial-scale=1"
                                 />
                                 <title>Yoga Program Dashboard</title>
-                                <link
-                                  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-                                  rel="stylesheet"
-                                />
                               </head>
                               <body>
                                 <div class="dashboard-container">
@@ -1932,7 +1924,7 @@
                                     color: #fff;
                                     border-radius: 50px;
                                     padding: 12px 20px;
-                                    font-family: &quot;Inter&quot;, sans-serif;
+                                    font-family: &quot;Montserrat&quot;, sans-serif;
                                     font-weight: 700;
                                     font-size: 15px;
                                     text-decoration: none;
@@ -3515,7 +3507,7 @@
                               style="
                                 color: #e5ad1c;
                                 font-weight: 700;
-                                font-family: &quot;Inter&quot;, sans-serif;
+                                font-family: &quot;Montserrat&quot;, sans-serif;
                                 font-size: 14px;
                               "
                             >
@@ -3639,7 +3631,7 @@
                               style="
                                 color: #e5ad1c;
                                 font-weight: 700;
-                                font-family: &quot;Inter&quot;, sans-serif;
+                                font-family: &quot;Montserrat&quot;, sans-serif;
                                 font-size: 14px;
                               "
                             >
